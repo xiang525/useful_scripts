@@ -1,0 +1,35 @@
+1. create a group 
+    sudo addgroup group1
+
+2. give the owner to group1
+    sudo chgrp group1 /mnt/all_data/data1    
+3. exclude all other group access right
+    sudo chmod o-x
+4. only give read authority to the folder
+    sudo chmod g+rx /mnt/all_data/data1
+alternative: give both read and write authority to the folder
+    sudo chmod g+rwx /mnt/all_data/data1
+
+5. add a user to group1
+    sudo adduser --ingroup group1 student1
+6. if needed but not necessary
+    sudo service ssh restart
+
+
+## several other commands on linux
+1. show current user
+    whoami
+2. swith to another user 
+    su username
+3. swith to root user 
+    sudo -i 
+4. display all groups
+    compgen -g 
+5. display all users
+    compgen -u 
+6. delete a group
+    delgroup groupname
+7. delete a user 
+    deluser username 
+8. show file/directory ownship
+    ls -l 
