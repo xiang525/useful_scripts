@@ -1,0 +1,12 @@
+1. create a new session
+    tmux
+2. change ceated session name
+    control+b+$
+3. submit a task
+    contrl + b + d
+4. list all tmux sessions
+    tmux ls 
+5. go to a session
+    tmux a -t sessionname
+6. kill a session 
+    tmux kill-session -t sessionname 
