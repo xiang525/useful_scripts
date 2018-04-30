@@ -33,3 +33,6 @@ alternative: give both read and write authority to the folder
     deluser username 
 8. show file/directory ownship
     ls -l 
+
+## count number of files in a directory
+ls directory_name | wc -l (e.g., ls XR-LE1 | wc -l)
